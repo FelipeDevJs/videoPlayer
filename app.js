@@ -1,13 +1,13 @@
 const express = require('express');
-const fs = require('fs');
+// const fs = require('fs');
 
-const PORT = process.env.PORT || 3000;
+const PORT = 9001;
 
 const app = express();
 
-const videoFileMap={
-  'cdn':'videos/cdn.mp4'
-}
+// const videoFileMap={
+//   'cdn':'videos/cdn.mp4'
+// }
 
 app.get('/', (req, res)=> {
   res.send('Olá, bem vinda a minha API!')
